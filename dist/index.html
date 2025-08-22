@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="./output.css" rel="stylesheet">
+  <title>To-Do App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="m-0 p-0 font-[Poppins] box-border bg-gradient-to-br from-[#771515] to-[#a2980e] min-h-screen flex items-center justify-center">
+
+  <div class="bg-white w-full max-w-md rounded-2xl p-8 shadow-lg">
+    <h2 class="text-[#650016] flex items-center gap-3 text-2xl font-bold mb-6">
+      To-Do List 
+      <img src="to-removebg-preview.png" alt="logo" class="w-8">
+    </h2>
+
+    
+    <div class="flex items-center justify-between bg-gray-100 rounded-full pl-4 mb-6">
+      <input id="input-box" type="text" placeholder="Add your text"
+        class="flex-1 bg-transparent border-none outline-none p-3 text-lg"/>
+      <button onclick="addTask()"
+        class="bg-[#ff5945] text-white px-6 py-3 rounded-full font-medium hover:bg-[#e64a37] transition">
+        Add
+      </button>
+    </div>
+  <ul id="list-container" class="space-y-2">
+   
+    </ul>
+  </div>
+
+  <script src="./app.js"></script>
+   
+</body>
+</html>
